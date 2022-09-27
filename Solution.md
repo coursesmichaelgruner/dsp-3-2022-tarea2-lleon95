@@ -189,3 +189,20 @@ No son iguales, por lo tanto es VARIANTE.
 
 * Causal: Es causal, dado que solo depende de muestras actuales
 * Estable
+
+# Ejercicio 5
+
+* Respecto a la respuesta al impulso, se tiene que cada par de entrada salida tiene la forma:
+
+$$
+y(n) = h(n) \ast x(n)
+$$
+
+Para que se coumpla la respuesta al impulso, el tamaño de la salida tiene que tener un tamaño de:
+
+$$
+N_y = N_x + N_y - 1
+$$
+
+Dado que $x_1, x_2$ tienen un tamaño equivalente, y $y_1, y_2$ no lo tienen, se puede aseverar que el sistema no es LTI. Asimismo, con respecto a la respuesta al impulso, no se puede decir nada dado que el sistema no es LTI.
+
