@@ -1,17 +1,51 @@
+# Tarea 2 - Procesamiento Digital de Señales
+
+Estudiante: Luis G. Leon Vega
+
+## Dependencias:
+
+Para ejecutar los scripts de Python, se requiere de los siguientes paquetes:
+
+* playsound >= 1.3.0
+
 ## Ejercicio 1: 
 
 [Solución](hw2/audio.py)
+
+Para ejecutar:
+
+```bash
+python3 hw2/audio.py
+```
+
+Esto generará un archivo llamado `sample.wav` y será leído de vuelta.
 
 
 ## Ejercicio 2: 
 
 [Solución](hw2/frequency.py)
 
+Para ejecutar:
+
+```bash
+python3 hw2/frequency.py
+```
+
+Esto generará un archivo llamado `input-sample.wav` con un tono de 200Hz muestreado a 40 kHz. Luego, el archivo será leído y remuestreado de tal forma que el tono de salida sea de 300Hz y será guardado en `resampled-sample.wav`.
+
 
 ## Ejercicio 3: 
 
 [Solución](hw2/generator.py)
 
+Para ejecutar:
+
+```bash
+SAMPLES_PER_PERIOD=10
+python3 hw2/generator.py
+```
+
+Esto generará un archivo llamado `input.wav` con un tono de 440Hz muestreado a 44.1 kHz. Luego, el archivo será leído y remuestreado tomando en cuenta el número de muestras por periodo y será guardado en `output.wav`.
 
 ## Ejercicio 4
 
@@ -198,7 +232,7 @@ $$
 y(n) = h(n) \ast x(n)
 $$
 
-Para que se coumpla la respuesta al impulso, el tamaño de la salida tiene que tener un tamaño de:
+Para que se cumpla la respuesta al impulso, el tamaño de la salida tiene que tener un tamaño de:
 
 $$
 N_y = N_x + N_y - 1
@@ -329,7 +363,8 @@ Una ilustración aproximada se presenta a continuación:
 
 References:
 
-1. walt kester, 2003, MIXED-SIGNAL AND DSP DESIGN TECHNIQUES
-2. http://spazioscuola.altervista.org/UndersamplingAR/UndersamplingARnv.htm
+[1] W. A. Kester, Mixed-signal and DSP design techniques. Amsterdam: Butterworth-Heinemann, 2003. 
+
+[2] A. Ricotta, Undersampling Sodar Signals. [Online]: http://spazioscuola.altervista.org/UndersamplingAR/UndersamplingARnv.htm, n.d.
 
 
