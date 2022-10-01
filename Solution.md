@@ -41,8 +41,8 @@ Esto generará un archivo llamado `input-sample.wav` con un tono de 200Hz muestr
 Para ejecutar:
 
 ```bash
-SAMPLES_PER_PERIOD=10
-python3 hw2/generator.py
+SAMPLES_PER_PERIOD=50
+python3 hw2/generator.py $SAMPLES_PER_PERIOD
 ```
 
 Esto generará un archivo llamado `input.wav` con un tono de 440Hz muestreado a 44.1 kHz. Luego, el archivo será leído y remuestreado tomando en cuenta el número de muestras por periodo y será guardado en `output.wav`.
